@@ -1,0 +1,50 @@
+[
+  {
+    "code": "PRD001",
+    "name": "Classic White Shirt",
+    "category": "Clothing",
+    "price": 899,
+    "image": "shirt-white.jpg",
+    "description": "Premium cotton, relaxed fit. Perfect for any occasion."
+  },
+  {
+    "code": "PRD002",
+    "name": "Leather Wallet",
+    "category": "Accessories",
+    "price": 649,
+    "image": "wallet.jpg",
+    "description": "Genuine leather, slim profile, 6 card slots."
+  },
+  {
+    "code": "PRD003",
+    "name": "Canvas Tote Bag",
+    "category": "Bags",
+    "price": 499,
+    "image": "tote.jpg",
+    "description": "Durable canvas with reinforced handles. Everyday carry."
+  },
+  {
+    "code": "PRD004",
+    "name": "Ceramic Mug",
+    "category": "Home",
+    "price": 349,
+    "image": "mug.jpg",
+    "description": "Hand-crafted ceramic, 350ml. Microwave safe."
+  },
+  {
+    "code": "PRD005",
+    "name": "Knit Sweater",
+    "category": "Clothing",
+    "price": 1199,
+    "image": "sweater.jpg",
+    "description": "Soft wool blend in classic fit. Available in 3 colours."
+  },
+  {
+    "code": "PRD006",
+    "name": "Wooden Keychain",
+    "category": "Accessories",
+    "price": 199,
+    "image": "keychain.jpg",
+    "description": "Laser-engraved solid wood. Lightweight and durable."
+  }
+]
