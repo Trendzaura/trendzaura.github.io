@@ -70,12 +70,38 @@ main{max-width:1200px;margin:0 auto;padding:2.5rem 1.5rem 5rem}
 .wabtn:disabled{background:var(--border);color:var(--muted);cursor:not-allowed;transform:none}
 .toasts{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%);z-index:400;display:flex;flex-direction:column;align-items:center;gap:.4rem;pointer-events:none}
 .toast{background:var(--text);color:#fff;padding:.55rem 1.2rem;border-radius:100px;font-size:.8rem;font-weight:600;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,.2);animation:tin .3s ease,tout .3s ease 1.7s forwards}
+.sell-btn{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#111827;   /* same as your theme */
+  color:#fff;
+  padding:10px 16px;
+  border-radius:999px;
+  font-size:.8rem;
+  font-weight:600;
+  text-decoration:none;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+  z-index:500;
+  transition:transform .2s,box-shadow .2s,background .2s;
+}
+
+.sell-btn:hover{
+  transform:translateY(-2px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.25);
+  background:#E11D48;  /* accent color */
+}
 @keyframes tin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @keyframes tout{from{opacity:1}to{opacity:0;transform:translateY(-6px)}}
 footer{background:var(--text);color:rgba(255,255,255,.4);text-align:center;padding:1.5rem;font-size:.75rem;letter-spacing:.05em}
 @media(max-width:560px){.grid{grid-template-columns:repeat(2,1fr);gap:.8rem}main{padding:1.5rem 1rem 4rem}}
 </style>
 </head>
+  <a href="https://wa.me/919729263836?text=Hi, I want to sell my products on MyShop" 
+   target="_blank" 
+   class="sell-btn">
+  Want to sell?
+</a>
 <body>
 
 <header>
