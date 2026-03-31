@@ -97,7 +97,6 @@ footer{background:var(--text);color:rgba(255,255,255,.4);text-align:center;paddi
 
 <main>
   <div class="sh">
-    <h1>All Products</h1>
     <p>Add items to cart, then send your order via WhatsApp.</p>
   </div>
   <div class="grid" id="grid"></div>
@@ -216,7 +215,23 @@ function sendWA(){
   const items=Object.values(cart);
   const total=items.reduce((s,{p,q})=>s+p.price*q,0);
   const lines=items.map(({p,q})=>`• ${p.code} × ${q}  —  ${p.name}  (${CUR}${(p.price*q).toLocaleString("en-IN")})`).join("\n");
-  const msg=`Hi! Order from *${SHOP}*:\n\n${lines}\n\n*Total: ${CUR}${total.toLocaleString("en-IN")}*\n\nPlease confirm. Thank you! 🙏`;
+  const msg=`Hello,
+
+I would like to place an order from *${SHOP}*:
+
+${lines}
+
+━━━━━━━━━━━━━━━
+*Total Amount: ${CUR}${total.toLocaleString("en-IN")}*
+━━━━━━━━━━━━━━━
+
+Name:
+Address:
+Phone:
+
+Kindly confirm the order.
+
+Thank you.`;
   window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`,"_blank");
 }
 
